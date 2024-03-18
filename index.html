@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Render All Element normally -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- Main CSS Stylesheet -->
+    <link rel="stylesheet" href="CSS/master.css" />
+    <link rel="stylesheet" href="CSS/media.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Calligraffitti&family=Imperial+Script&family=Metal+Mania&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    />
+    <!-- Page Icon -->
+    <link rel="shortcut icon" href="Images/logo1.icon" type="image/x-icon" />
+    <title>glamxo Agency</title>
+  </head>
+  <body>
+    <!-- Start Sitting Box -->
+    <div class="main__settings">
+      <div class="toggle__setting">
+        <i class="fa-solid fa-user-gear user-gear"></i>
+      </div>
+      <div class="setting__container">
+        <div class="option__box">
+          <h4>Colors</h4>
+          <ul class="color__list">
+            <li
+              class="active"
+              data-src="./Images/about_us2.png"
+              data-color="#f875aa"
+            ></li>
+            <li data-src="./Images/about_us3.png" data-color="#FC4F00"></li>
+            <li data-src="./Images/about_us4.png" data-color="#B931FC"></li>
+            <li data-src="./Images/about_us5.png" data-color="#FFD966"></li>
+            <li data-src="./Images/about_us6.png" data-color="#C21010"></li>
+          </ul>
+        </div>
+        <!-- <div class="option__box">
+          <h4>Font Size</h4>
+          <input type="range" min="12" max="24" value="">
+        </div> -->
+        <div class="option__box">
+          <h4>Background</h4>
+          <div class="bg__switch">
+            <span class="yes active" data-background="yes">Yes</span>
+            <span class="no" data-background="no">No</span>
+          </div>
+        </div>
+        <div class="option__box">
+          <h4>Show Bullets</h4>
+          <div class="bullet__switch">
+            <span class="yes active" data-display="show">show</span>
+            <span class="no" data-display="hide">hide</span>
+          </div>
+        </div>
+        <button class="reset__options">Reset Options</button>
+      </div>
+    </div>
+    <!-- End Sitting Box -->
+
+    <!-- Start Nav Bullets -->
+    <div class="nav__bullets">
+      <div class="bullets" data-section=".about__us">
+        <div class="tooltip">About Us</div>
+      </div>
+      <div class="bullets" data-section=".skills">
+        <div class="tooltip">Our Skills</div>
+      </div>
+      <div class="bullets" data-section=".gallery">
+        <div class="tooltip">Our Gallery</div>
+      </div>
+      <div class="bullets" data-section=".timeline">
+        <div class="tooltip">Timeline</div>
+      </div>
+      <div class="bullets" data-section=".features">
+        <div class="tooltip">Features</div>
+      </div>
+      <div class="bullets" data-section=".testimonials">
+        <div class="tooltip">Testimonials</div>
+      </div>
+    </div>
+    <!-- End Nav Bullets -->
+
+    <!-- Start Header -->
+    <header class="page__header">
+      <div class="container">
+        <a href="#" class="logo__branding">
+          <img src="./Images/logo1-p.png" alt="" />
+        </a>
+        <nav class="nave__menu">
+          <div class="hamburger">
+            <i class="fa-solid fa-bars toggle-menu"></i>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about_us" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#our_skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#our_gallery" class="nav__link">Gallery</a>
+            </li>
+            <li class="nav__item">
+              <a href="#features" class="nav__link">Features</a>
+            </li>
+            <li class="nav__item">
+              <a href="#testimonials" class="nav__link">Testimonials</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contactus" class="nav__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Landing Section -->
+    <section class="landing__page">
+      <div class="intro__text">
+        <h1>we are <span>glamxo</span> agency</h1>
+        <p>glow with a new day</p>
+        <button type="submit" class="btn btn--primary" role="button">
+          learn more
+        </button>
+      </div>
+    </section>
+    <!-- End Landing Section -->
+
+    <!-- Start About Us Section -->
+    <section id="about_us" class="about__us section-padding">
+      <div class="container">
+        <div class="main__heading">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+            fugiat quisquam, ad veniam aperiam ullam voluptatum quam tempora
+            iure voluptates reprehenderit eveniet, eligendi similique nihil rem
+            fugit itaque dolorem fuga?
+          </p>
+        </div>
+        <div class="img__box">
+          <img
+            id="about_img"
+            src="./Images/about_us2.png"
+            alt="This is About Us Photo Your Connection is Bad"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- End About Us Section -->
+
+    <!-- Start Our Skills Section -->
+    <section id="our_skills" class="skills section-padding">
+      <div class="container">
+        <div class="skills__item">
+          <h2>Our Skills</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            impedit dignissimos nobis praesentium fuga obcaecati fugiat in iure
+            blanditiis, ea excepturi numquam facere, qui quae aliquam
+            repudiandae nam molestiae officiis!
+          </p>
+          <div class="prog__holder">
+            <h4>Creativity</h4>
+            <div class="skill_prog">
+              <span data-progress="95%"></span>
+            </div>
+          </div>
+          <div class="prog__holder">
+            <h4>Customer Service Skills</h4>
+            <div class="skill_prog">
+              <span data-progress="90%"></span>
+            </div>
+          </div>
+          <div class="prog__holder">
+            <h4>Physical Stamina</h4>
+            <div class="skill_prog">
+              <span data-progress="85%"></span>
+            </div>
+          </div>
+          <div class="prog__holder">
+            <h4>Cleanliness &amp; Organization</h4>
+            <div class="skill_prog">
+              <span data-progress="98%"></span>
+            </div>
+          </div>
+          <div class="prog__holder">
+            <h4>Practical SkinCare Expertise</h4>
+            <div class="skill_prog">
+              <span data-progress="80%"></span>
+            </div>
+          </div>
+          <div class="prog__holder">
+            <h4>Cosmetic Products</h4>
+            <div class="skill_prog">
+              <span data-progress="95%"></span>
+            </div>
+          </div>
+          <div class="prog__holder">
+            <h4>Time Management Skills</h4>
+            <div class="skill_prog">
+              <span data-progress="80%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Our Skills Section -->
+
+    <!-- Start Gallery Section -->
+    <section id="our_gallery" class="gallery section-padding">
+      <div class="container">
+        <h2>Our Gallery</h2>
+        <div class="image__box">
+          <img src="./Images/g1.jpg" alt="Gallery Products" />
+          <img src="./Images/g2.jpg" alt="Gallery Products" />
+          <img src="./Images/g3.jpg" alt="Gallery Products" />
+          <img src="./Images/g4.jpg" alt="Gallery Products" />
+          <img src="./Images/g5.jpg" alt="Gallery Products" />
+          <img src="./Images/g6.jpg" alt="Gallery Products" />
+          <img src="./Images/g7.jpg" alt="Gallery Products" />
+          <img src="./Images/g8.jpg" alt="Gallery Products" />
+          <img src="./Images/g9.jpg" alt="Gallery Products" />
+          <img src="./Images/g10.jpg" alt="Gallery Products" />
+        </div>
+      </div>
+    </section>
+    <!-- End Gallery Section -->
+
+    <!-- Start TimeLine Section -->
+    <section class="timeline section-padding">
+      <div class="container">
+        <div class="timeline__content">
+          <div class="year">2023</div>
+          <div class="left">
+            <div class="contant">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh e
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="right">
+            <div class="contant">
+              <h3>Testing Heading</h3>
+              <p>
+                Euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                Ut w
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="year">2022</div>
+          <div class="left">
+            <div class="contant">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh e
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="left">
+            <div class="contant">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh e
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End TimeLine Section -->
+
+    <!-- Start Features Section -->
+    <section id="features" class="features section-padding">
+      <h2>Product Features</h2>
+      <p>NATURAL & SAFE</p>
+      <div class="container">
+        <div class="feat__box">
+          <img src="./Images/Icon_1.png" alt="" />
+          <h4>Vegan Products</h4>
+          <p>
+            Cruelty-Free & 100% Vegan products. 100% inert ingredients and
+            non-comedogenic.
+          </p>
+        </div>
+        <div class="feat__box">
+          <img src="./Images/Icon_2.png" alt="" />
+          <h4>Nutrition for skin</h4>
+          <p>
+            Products allow the skin to breathe, heal, and function naturally.
+            formulated to feel so light
+          </p>
+        </div>
+        <div class="feat__box">
+          <img src="./Images/Icon_3.png" alt="" />
+          <h4>Soft &amp; Gentle</h4>
+          <p>
+            Skin looks and feels luminous and alive. Ingredients produce an
+            &quot; air-brushed &quot; finish
+          </p>
+        </div>
+        <div class="feat__box">
+          <img src="./Images/Icon_4.png" alt="" />
+          <h4>Water-resistant</h4>
+          <p>
+            No product slippage throughout the day. Water resistant products
+            stand up to heat, humidity, and perspiration
+          </p>
+        </div>
+        <div class="feat__box">
+          <img src="./Images/Icon_5.png" alt="" />
+          <h4>UV-Skin protection</h4>
+          <p>
+            Natural sun protectant against UVB (burning) <br />
+            many UVA (aging) rays
+          </p>
+        </div>
+        <div class="feat__box">
+          <img src="./Images/Icon_6.png" alt="" />
+          <h4>Carefully Chosen</h4>
+          <p>
+            Carefully chosen ingredients reduce line visibility. Minerals are
+            milled to a precise size, reducing absorption and eliminating
+          </p>
+        </div>
+        <div class="feat__box">
+          <img src="./Images/Icon_7.png" alt="" />
+          <h4>high-end</h4>
+          <p>
+            A premier choice for high-end cosmetics with exceptional performance
+            and coverage <br />
+          </p>
+        </div>
+        <div class="feat__box">
+          <img src="./Images/Icon_8.png" alt="" />
+          <h4>Formulated</h4>
+          <p>
+            Sports Performance Formulated <br />
+            Formulated for Air Travel
+          </p>
+        </div>
+        <div class="feat__box">
+          <img src="./Images/Icon_9.png" alt="" />
+          <h4>preservative</h4>
+          <p>Free of preservative, irritants, chemicals & talcs</p>
+        </div>
+      </div>
+    </section>
+    <!-- End Features Section -->
+
+    <!-- tart Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding">
+      <div class="container">
+        <h2>&nbsp;Testim<span>onials</span></h2>
+        <div class="testi__box">
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+          <div class="person__info">
+            <img src="./Images/Person-1.jpg" alt="" />
+            <h4>Jaen Doe</h4>
+            <p>CEO</p>
+          </div>
+        </div>
+        <div class="testi__box">
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+          <div class="person__info">
+            <img src="./Images/Person-2.jpg" alt="" />
+            <h4>Jaen Doe</h4>
+            <p>CEO</p>
+          </div>
+        </div>
+        <div class="testi__box">
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+          <div class="person__info">
+            <img src="./Images/Person-3.jpg" alt="" />
+            <h4>Jaen Doe</h4>
+            <p>CEO</p>
+          </div>
+        </div>
+        <ul class="indicators">
+          <li></li>
+          <li class="active"></li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- <div class="clearfix"></div> -->
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- Start Contact Us -->
+    <section id="contactus" class="contact__us section-padding">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="">
+          <div class="Info">
+            <input
+              type="text"
+              placeholder="Your Name *"
+              name="username"
+              required
+            />
+            <input
+              type="tel"
+              placeholder="xxx-xxx-xxxx *"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email Address *"
+              name="email"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Subject *"
+              name="subject"
+              required
+            />
+          </div>
+          <div class="massage">
+            <textarea name="message" placeholder="Your Message *"></textarea>
+            <input type="submit" value="Contact Us" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- End Contact Us -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="footer__container">
+        <div class="social__icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-google-plus"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footer__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about_us" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#our_skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#our_gallery" class="nav__link">Gallery</a>
+            </li>
+            <li class="nav__item">
+              <a href="#features" class="nav__link">Features</a>
+            </li>
+            <li class="nav__item">
+              <a href="#testimonials" class="nav__link">Testimonials</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contactus" class="nav__link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>
+          Copyright &copy;2024; Designed by <span>MM</span>
+          <span class="designer">Mariana Mounir</span> . All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- javaScript and jQuary Files -->
+    <script src="JS/master.js"></script>
+  </body>
+</html>

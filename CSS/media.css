@@ -1,0 +1,426 @@
+/* =================================== Variables & Global Rules =================================== */
+/* Start Variables */
+:root {
+  --main-color: #f875aa;
+  --Secondary-color: #fce2db;
+  --Third-color: #ff90c2;
+  --hover-color: #b2a4ff;
+  --color-opacity: rgba(255, 144, 194, 0.2);
+}
+/* Global Rules */
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 85%;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+  p {
+    font-size: 13px !important;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  h2 {
+    font-size: 45px;
+  }
+  p {
+    font-size: 15px !important;
+  }
+}
+/* ======================================== Grid System ======================================== */
+/* Container */
+/* Mobil & Tablet Rules */
+/* Small Devices => Landscape Phones */
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+/* Small Screen */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 750px;
+    /* max-width: 720px; */
+  }
+}
+/* Medium Screen  */
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 970px;
+    /* width:960px */
+  }
+}
+/* Large Screen */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    /* width: 1140px */
+  }
+}
+/* ======================================== Header ======================================== */
+@media screen and (max-width: 576px) {
+  header .logo__branding {
+    justify-content: flex-start;
+  }
+  header .logo__branding img {
+    height: 70%;
+    width: 70%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  header .logo__branding img {
+    height: 85%;
+    width: 85%;
+  }
+}
+/* ======================================== Nav Items ======================================== */
+@media screen and (max-width: 576px) {
+  header nav .toggle-menu {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+    /* width: fit-content; */
+  }
+  header nav ul li a {
+    display: block;
+    position: relative;
+    margin: 5px;
+    padding: 4px 6px;
+    box-shadow: 0px 5px 0.5px rgb(248, 117, 170, 0.25);
+    color: var(--main-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: Metal Mania;
+    touch-action: manipulation;
+    width: fit-content;
+    z-index: 2;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+  }
+  header nav ul li a.active,
+  header nav ul li a:hover {
+    color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+  }
+}
+@media screen and (max-width: 991px) {
+  header nav .toggle-menu {
+    display: inline-block;
+    padding-right: 25px;
+  }
+  header nav .nav__list {
+    display: none;
+  }
+  header nav .nav__list.open {
+    display: block;
+    background-color: #fce2dbec;
+    padding: 20px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7100%;
+    min-width: 200px;
+    /* height: 60vh; */
+    z-index: 1000;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+  header nav .nav__list.open li a {
+    padding: 15px;
+    margin: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-family: Metal Mania;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+  }
+  header nav .nav__list.open li a.active,
+  header nav .nav__list.open li a:hover {
+    color: var(--hover-color);
+    padding-left: 35px;
+    background-color: rgba(252, 226, 219, 0.6);
+    border-radius: 6px;
+    transform: translatex(5px);
+    -webkit-transform: translatex(5px);
+    -moz-transform: translatex(5px);
+    -ms-transform: translatex(5px);
+    -o-transform: translatex(5px);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+  }
+}
+/* ======================================== Landing Page ======================================== */
+@media screen and (max-width: 576px) {
+  .landing__page .intro__text h1 {
+    font-size: 26px;
+  }
+  .landing__page .intro__text h1 span {
+    font-size: 38px;
+  }
+  .landing__page .intro__text p {
+    font-size: 16px;
+  }
+  .landing__page .intro__text .btn--primary {
+    padding: 10px 10px;
+    min-width: 50px;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  .landing__page .intro__text h1 {
+    font-size: 32px;
+  }
+  .landing__page .intro__text h1 span {
+    font-size: 40px;
+  }
+  .landing__page .intro__text p {
+    font-size: 20px;
+  }
+}
+/* ======================================== About-Us ======================================== */
+@media screen and (max-width: 576px) {
+  /* On screens that are 600px wide or less, show one column. */
+  .about__us .container .img__box {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__us .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about__us .container .main__heading {
+    padding: 0 0 15px;
+  }
+  .about__us .container .main__heading h2 {
+    text-align: center;
+  }
+  .about__us .container .img__box {
+    max-width: 200px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .about__us .container .img__box {
+    max-width: 250px;
+  }
+}
+/* ======================================== Skills ======================================== */
+@media screen and (max-width: 576px) {
+  .skills .container .skills__item {
+    padding: 10px;
+    margin: 0 15px;
+  }
+  .skills .container .skills__item p {
+    display: none;
+  }
+  .skills .skills__item .prog__holder {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills .skills__item .prog__holder h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .skills .skills__item .skill_prog {
+    width: 100%;
+    height: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .skills .container .skills__item p {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .skills .skills__item .prog__holder h4 {
+    width: 200px;
+    font-size: 15px;
+  }
+  .skills .skills__item .skill_prog {
+    width: calc(100% - 210px);
+    height: 25px;
+  }
+}
+/* ======================================== Gallery ======================================== */
+@media screen and (max-width: 576px) {
+  .gallery .image__box img {
+    width: 250px;
+  }
+  .popup-box {
+    width: 250px;
+  }
+}
+/* ======================================== TimeLine ======================================== */
+@media screen and (max-width: 767px) {
+  .timeline .timeline__content .left,
+  .timeline .timeline__content .right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .timeline .timeline__content .left::before,
+  .timeline .timeline__content .right::before,
+  .timeline .timeline__content .left .contant::before,
+  .timeline .timeline__content .right .contant::before {
+    display: none;
+  }
+}
+/* ======================================== Feature ======================================== */
+@media screen and (max-width: 767px) {
+  .features .feat__box h4 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .features .feat__box:last-of-type {
+    /* grid-column: 1 / -1; */
+    grid-column: span 2;
+    margin: auto;
+  }
+}
+/* ====================================== Testimonials ====================================== */
+@media screen and (max-width: 991px) {
+  .testimonials .testi__box {
+    /* width: 100%;
+    margin-bottom: 10px; */
+    text-align: center;
+  }
+  .testimonials .testi__box .person__info {
+    text-align: center;
+    overflow: visible;
+  }
+  .testimonials .testi__box .person__info img {
+    float: none;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .testimonials .testi__box {
+    width: 100%;
+    margin-bottom: 10px;
+    float: none;
+  }
+}
+/* ======================================= Contact Us ======================================= */
+@media screen and (max-width: 767px) {
+  .contact__us form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__us form .Info,
+  .contact__us form .massage {
+    width: 100%;
+  }
+}
+/* ========================================= Footer ========================================= */
+@media screen and (max-width: 767px) {
+  .footer__container {
+  width: 100%;
+  padding: 70px 30px 0;
+}
+  .footer__nav ul {
+    flex-direction: column;
+  }
+  .footer__nav ul li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer__nav {
+  margin: 20px 0;
+}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  footer .social__icons a i {
+    font-size: 1.5em;
+  }
+    .footer__nav ul li a {
+    font-size: 1.3em;
+  }
+  .footer__bottom p span:first-of-type {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+    footer .social__icons a i {
+    font-size: 1.2em;
+  }
+    .footer__bottom p span:first-of-type {
+    font-size: 20px;
+  }
+}
+/* ========================================================================================== */
+/* Mobil & Tablet Rules */
+/* Small Devices => Landscape Phones */
+@media screen and (max-width: 767px) {
+}
+@media screen and (min-width: 576px) {
+}
+/* Small Screen Rules*/
+@media screen and (min-width: 768px) {
+}
+/* Medium Screen Rules */
+@media screen and (min-width: 992px) {
+}
+/* Large Screen Rules */
+@media screen and (min-width: 1200px) {
+}
+
+/* @media (min-width: 768px) {
+  .button-66 {
+    padding: 16px 44px;
+    min-width: 150px;
+  }
+}*/
